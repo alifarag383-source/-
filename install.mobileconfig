@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.promptengineer.webclip</string>
+            <key>PayloadUUID</key>
+            <string>A1B2C3D4-E5F6-7A8B-9C0D-1E2F3A4B5C6D</string>
+            <key>PayloadDisplayName</key>
+            <string>جسر البرومبت الاحترافي</string>
+            <key>URL</key>
+            <string>https://alifarag383-source.github.io/-/</string>
+            <key>Label</key>
+            <string>جسر البرومبت</string>
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>تثبيت تطبيق جسر البرومبت</string>
+    <key>PayloadIdentifier</key>
+    <string>com.promptengineer.profile</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>B2C3D4E5-F6A7-8B9C-0D1E-2F3A4B5C6D7E</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>
