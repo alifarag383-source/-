@@ -379,5 +379,67 @@
             });
         }
     </script>
+    <!-- زر تنصيب الآيفون المباشر -->
+<div style="position:fixed;bottom:20px;left:20px;right:20px;z-index:9999;text-align:center;">
+  <button onclick="downloadProfile()" style="background:#10b981;color:white;font-weight:bold;padding:14px 24px;border-radius:12px;border:none;box-shadow:0 4px 14px rgba(0,0,0,0.3);font-size:16px;cursor:pointer;width:100%;max-width:400px;">
+    📲 تثبيت كملف تنصيب على الآيفون
+  </button>
+</div>
+
+<script>
+function downloadProfile() {
+  const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>PayloadIdentifier</key>
+            <string>com.alikadhim.promptbridge.webclip</string>
+            <key>PayloadUUID</key>
+            <string>4C3B2A10-9F8E-7D6C-5B4A-3E2D1C0B9A8F</string>
+            <key>PayloadDisplayName</key>
+            <string>جسر البرومبت الاحترافي</string>
+            <key>URL</key>
+            <string>https://alifarag383-source.github.io/-/</string>
+            <key>Label</key>
+            <string>جسر البرومبت</string>
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Precomposed</key>
+            <true/>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>تنصيب جسر البرومبت - علي كاظم حسين الزبيدي</string>
+    <key>PayloadIdentifier</key>
+    <string>com.alikadhim.promptbridge.profile</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>8A7B6C5D-4E3F-2A10-9B8C-7D6E5F4A3B2C</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>`;
+
+  const blob = new Blob([xmlContent], { type: 'application/x-apple-aspen-config' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = 'PromptBridge.mobileconfig';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+</script>
 </body>
 </html>
